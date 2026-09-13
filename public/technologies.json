@@ -44,7 +44,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability and advanced features.",
-    "icon": "https://p7.hiclipart.com/preview/358/849/109/postgresql-clip-art-database-logo-database-symbol.jpg",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -74,7 +74,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly designing modern, responsive interfaces.",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEejR-ntQF6rpZAvpDuPAQwnzNMXgNsj-hQVIYmQ3-NHqvMI-nYN5FjU&s=10",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Utility"
@@ -84,7 +84,7 @@
     "name": "DaisyUI",
     "category": "Styling",
     "description": "A component library for Tailwind CSS that speeds up UI building with ready-made classes.",
-    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyHcC0lfk4OxWQ578jqt_aJRBqYpcHaeDGT47BwMJEx5O-T5O-btsbQY&s=10",
+    "icon": "https://raw.githubusercontent.com/saadeghi/daisyui-images/master/images/daisyui-logo/favicon-192.png",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "UI Kit"
