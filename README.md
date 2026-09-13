@@ -6,7 +6,7 @@ A modern, fast, and responsive React web application that helps developers explo
 
 ## 🌐 Live Website
 
-- **Live Demo:** [https://ph-a05-rohan.netlify.app/](https://ph-a05-rohan.netlify.app/)
+- **Live Demo:** [https://b14-a05-dev-stack-tau.vercel.app/](https://b14-a05-dev-stack-tau.vercel.app/)
 
 ## 📂 GitHub Repository
 
