@@ -10,7 +10,7 @@ A modern, fast, and responsive React web application that helps developers explo
 
 ## 📂 GitHub Repository
 
-- **GitHub Repo:** [https://github.com/DeeDee001/PH-A05.git](https://github.com/DeeDee001/PH-A05.git)
+- **GitHub Repo:** [https://github.com/mahmudulhasanmaruf78/B14-A05-DevStack](https://github.com/mahmudulhasanmaruf78/B14-A05-DevStack)
 
 ---
 
