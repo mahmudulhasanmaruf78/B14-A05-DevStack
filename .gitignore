@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Design source binaries
+*.fig
+*.penpot
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
