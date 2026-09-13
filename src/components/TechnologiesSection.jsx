@@ -37,8 +37,8 @@ export function TechnologiesSection({
           <p className="font-semibold">{error}</p>
         </div>
       ) : (
-        /* Responsive Grid: 1 column on mobile, 2 on tablet, 3 on desktop */
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        /* Responsive Grid: 1 column on mobile, 2 on tablet, 3 on xl desktop */
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
           {technologies.map((technology) => {
             const isAdded = stack.some((item) => item.id === technology.id)
             return (
