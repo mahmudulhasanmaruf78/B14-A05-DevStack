@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
@@ -46,26 +48,43 @@ function App() {
     }
   }, [])
 
-  // Child to Parent: Add technology to stack (duplicate check)
+  // Child to Parent: Add technology to stack (with duplicate check & warning alert)
   const handleAddToStack = (technology) => {
     if (stack.some((item) => item.id === technology.id)) {
+      toast.warn(`${technology.name} is already in your stack!`)
       return
     }
     setStack((prev) => [...prev, technology])
+    toast.success(`${technology.name} added to your stack!`)
   }
 
-  // Remove single technology from stack
+  // Remove single technology from stack with notification
   const handleRemoveFromStack = (technologyId) => {
+    const itemToRemove = stack.find((item) => item.id === technologyId)
     setStack((prev) => prev.filter((item) => item.id !== technologyId))
+    toast.info(`${itemToRemove?.name || 'Technology'} removed from your stack.`)
   }
 
-  // Clear all technologies from stack
+  // Clear entire stack at once with notification
   const handleClearAll = () => {
+    if (stack.length === 0) return
     setStack([])
+    toast.info('Your stack has been cleared.')
   }
 
   return (
     <div className="flex min-h-screen flex-col bg-white text-base-content">
+      <ToastContainer
+        position="top-right"
+        autoClose={2200}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+
       <Header />
 
       <main className="mx-auto w-full max-w-7xl flex-1 space-y-16 px-4 py-10 sm:px-6 lg:px-8">

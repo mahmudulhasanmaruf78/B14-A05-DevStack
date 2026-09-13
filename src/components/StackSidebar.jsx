@@ -36,7 +36,7 @@ export function StackSidebar({
           {stack.map((technology) => (
             <div
               key={technology.id}
-              className="flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/60 p-3.5 transition-all hover:bg-slate-50 hover:shadow-sm"
+              className="flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/60 p-3.5 transition-all duration-200 hover:border-violet-200 hover:bg-white hover:shadow-md"
             >
               <div className="flex min-w-0 items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200/60 bg-white p-2 shadow-xs">
@@ -56,13 +56,13 @@ export function StackSidebar({
                 </div>
               </div>
 
-              {/* Remove button */}
+              {/* Remove single technology button */}
               <button
                 type="button"
                 onClick={() => onRemove(technology.id)}
-                className="btn btn-ghost btn-circle btn-sm text-slate-400 hover:bg-rose-50 hover:text-rose-600"
+                className="btn btn-ghost btn-circle btn-sm text-slate-400 transition-colors hover:bg-rose-50 hover:text-rose-600"
                 aria-label={`Remove ${technology.name} from stack`}
-                title="Remove"
+                title={`Remove ${technology.name}`}
               >
                 ✕
               </button>
@@ -77,7 +77,7 @@ export function StackSidebar({
           <button
             type="button"
             onClick={onClearAll}
-            className="btn btn-outline btn-error btn-sm w-full rounded-full font-semibold transition-all hover:shadow-sm"
+            className="btn btn-outline btn-error btn-sm w-full rounded-full font-semibold transition-all hover:bg-rose-600 hover:text-white hover:shadow-md"
           >
             Remove All
           </button>
