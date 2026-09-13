@@ -4,7 +4,7 @@ export function StackSidebar({
   onClearAll = () => {},
 }) {
   return (
-    <aside className="soft-panel card-glow sticky top-24 h-fit rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm">
+    <aside className="soft-panel card-glow lg:sticky lg:top-24 h-fit rounded-3xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-sm">
       {/* Header with Title and Selected Count */}
       <div className="flex items-center justify-between border-b border-slate-100 pb-4">
         <div>
@@ -20,7 +20,7 @@ export function StackSidebar({
 
       {/* Content: Empty State vs Item List */}
       {stack.length === 0 ? (
-        <div className="my-6 flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50/70 p-8 text-center">
+        <div className="my-6 flex flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50/70 p-6 sm:p-8 text-center">
           <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-100 text-2xl font-bold text-violet-600">
             +
           </div>
@@ -32,7 +32,7 @@ export function StackSidebar({
           </p>
         </div>
       ) : (
-        <div className="my-5 space-y-3">
+        <div className="my-5 max-h-[60vh] space-y-3 overflow-y-auto pr-1">
           {stack.map((technology) => (
             <div
               key={technology.id}

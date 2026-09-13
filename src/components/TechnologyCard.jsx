@@ -5,9 +5,9 @@ export function TechnologyCard({
 }) {
   return (
     <article
-      className={`soft-panel card-glow flex flex-col justify-between rounded-3xl border p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg ${
+      className={`soft-panel card-glow flex flex-col justify-between rounded-3xl border p-5 sm:p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg ${
         isAdded
-          ? 'border-violet-300 bg-violet-50/40'
+          ? 'border-violet-300 bg-violet-50/50'
           : 'border-slate-200/80 bg-white'
       }`}
     >
@@ -15,7 +15,7 @@ export function TechnologyCard({
         {/* Top Header: Icon, Name, Category chip, Badge */}
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-100 bg-slate-50 p-2 shadow-sm">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-slate-100 bg-slate-50 p-2 shadow-xs">
               <img
                 src={technology.icon}
                 alt={technology.name}
@@ -33,7 +33,7 @@ export function TechnologyCard({
             </div>
           </div>
 
-          <span className="rounded-full border border-violet-200/60 bg-violet-100/70 px-3 py-1 text-xs font-semibold text-violet-700">
+          <span className="rounded-full border border-violet-200/60 bg-violet-100/70 px-2.5 py-0.5 text-xs font-semibold text-violet-700">
             {technology.badge}
           </span>
         </div>
@@ -56,7 +56,7 @@ export function TechnologyCard({
           </span>
         </div>
 
-        {/* Add to Stack Button */}
+        {/* Add to Stack Button (using centralized btn-brand) */}
         <button
           type="button"
           onClick={() => onAdd(technology)}
@@ -64,7 +64,7 @@ export function TechnologyCard({
           className={`btn w-full rounded-full font-semibold transition-all ${
             isAdded
               ? 'btn-disabled cursor-not-allowed border-slate-200 bg-slate-100 text-slate-400'
-              : 'btn-primary border-none bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-md shadow-violet-500/20 hover:from-violet-700 hover:to-indigo-700'
+              : 'btn-brand'
           }`}
         >
           {isAdded ? '✓ Added to Stack' : 'Add to Stack'}

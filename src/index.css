@@ -2,6 +2,11 @@
 @plugin 'daisyui';
 
 :root {
+  /* Centralized Brand Gradient Theme */
+  --brand-gradient: linear-gradient(90deg, #f97316 0%, #ec4899 48%, #8b5cf6 100%);
+  --brand-gradient-hover: linear-gradient(90deg, #ea580c 0%, #db2777 48%, #7c3aed 100%);
+  --brand-gradient-subtle: linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(236, 72, 153, 0.08) 50%, rgba(139, 92, 246, 0.08) 100%);
+
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;

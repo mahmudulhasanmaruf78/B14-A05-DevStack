@@ -3,9 +3,9 @@ import logoText from '../assets/logo-text.png'
 export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-200">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.5fr_0.9fr_0.9fr_0.9fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-[1.6fr_1fr_1fr_1fr] lg:gap-10 lg:px-8">
         {/* Brand Block */}
-        <div className="space-y-4">
+        <div className="space-y-4 sm:col-span-2 lg:col-span-1">
           <div className="flex items-center gap-3">
             <img
               src={logoText}
@@ -24,7 +24,7 @@ export function Footer() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-violet-500 hover:text-violet-400"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-800 text-slate-400 transition hover:border-violet-500 hover:text-violet-400 hover:bg-slate-900"
               aria-label="GitHub"
             >
               <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24">
@@ -35,7 +35,7 @@ export function Footer() {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-violet-500 hover:text-violet-400"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-800 text-slate-400 transition hover:border-violet-500 hover:text-violet-400 hover:bg-slate-900"
               aria-label="Twitter / X"
             >
               <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ export function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-400 transition hover:border-violet-500 hover:text-violet-400"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-800 text-slate-400 transition hover:border-violet-500 hover:text-violet-400 hover:bg-slate-900"
               aria-label="LinkedIn"
             >
               <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-slate-900 bg-slate-950/80">
+      <div className="border-t border-slate-900 bg-slate-950">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} Dev Stack. All rights reserved.</p>
           <div className="flex gap-6">
