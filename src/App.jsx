@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 
 function App() {
   const [technologies, setTechnologies] = useState([])
+  const [stack, setStack] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -44,6 +45,12 @@ function App() {
     }
   }, [])
 
+  const handleAddToStack = (technology) => {
+    if (!stack.some((item) => item.id === technology.id)) {
+      setStack((prev) => [...prev, technology])
+    }
+  }
+
   return (
     <div className="flex min-h-screen flex-col bg-white text-base-content">
       <Header />
@@ -55,6 +62,8 @@ function App() {
           technologies={technologies}
           loading={loading}
           error={error}
+          stack={stack}
+          onAdd={handleAddToStack}
         />
       </main>
 
